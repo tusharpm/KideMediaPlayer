@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>KideMediaPlayer</title>
+
+    <!-- WinJS references -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+
+    <!-- KideMediaPlayer references -->
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/default.js"></script>
+</head>
+<body class="win-type-body">
+    <div id="app" class="show-home win-type-body">
+        <div class="splitView" data-win-control="WinJS.UI.SplitView">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <!--this is a button that allows you to "toggle" the menu in and out of view -->
+                    <button class="win-splitviewpanetoggle" data-win-control="WinJS.UI.SplitViewPaneToggle"
+                            data-win-options="{ splitView: select('.splitView') }"></button>
+                    <div class="title">SplitView Pane area</div>
+                </div>
+                <!--this is where the navigation icons go -->
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{
+                        label:'Alki Trail',
+                        icon:'mappin'
+                    }"></div>
+                </div>
+            </div>
+            <!-- Content area -->
+            <div class="contenttext"><h2 class="win-h2">SplitView Content area</h2> </div>
+        </div>
+    </div>
+</body>
+</html>

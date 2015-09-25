@@ -1,0 +1,2 @@
+# KideMediaPlayer
+Kide Media Player

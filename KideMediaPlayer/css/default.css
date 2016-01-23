@@ -23,6 +23,11 @@
     margin-top: 20px;
 }
 
+#app .nav-commands [isSelected] .win-splitviewcommand-button-content {
+    color: deepskyblue;
+    font-weight: bolder;
+}
+
 .win-splitviewcommand-button {
     background-color: transparent;
 }
@@ -42,4 +47,11 @@
 #app .contenttext {
     margin-left: 20px;
     margin-top: 6px;
+}
+
+#app #playerControls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
 }

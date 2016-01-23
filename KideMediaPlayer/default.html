@@ -12,6 +12,7 @@
     <!-- KideMediaPlayer references -->
     <link href="css/default.css" rel="stylesheet" />
     <script src="js/default.js"></script>
+    <script src="js/splitViewCommand.js"></script>
 </head>
 <body class="win-type-body">
     <div id="app" class="show-home win-type-body">
@@ -26,18 +27,16 @@
                 </div>
                 <!--this is where the navigation icons go -->
                 <div class="nav-commands">
-                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{
-                        label:'Alki Trail',
-                        icon:'mappin'
-                    }"></div>
-                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{
-                        label:'Mhow Trail',
-                        icon:'mappin'
-                    }"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Home', icon: 'home', oninvoked: somethingClicked}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'All Songs', icon: 'audio', oninvoked: somethingClicked}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Settings', icon: 'settings', oninvoked: somethingClicked}"></div>
                 </div>
             </div>
             <!-- Content area -->
-            <div class="contenttext"><h2 class="win-h2">SplitView Content area</h2> </div>
+            <div class="contenttext">
+                <h2 class="win-h2">SplitView Content area</h2>
+                <audio controls id="playerControls"><source src="test.mp3"></audio>
+            </div>
         </div>
     </div>
 </body>
